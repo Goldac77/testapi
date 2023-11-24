@@ -13,6 +13,7 @@ app.post("/form", (req, res) => {
     } = req.body;
 
     res.status(200).send("Form submitted successfully");
+    console.log(req.body);
 })
 
 app.listen(5001, () => {
